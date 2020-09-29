@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<header> 
+    <h1> Blog do Vidal </h1>
+</header>
+
+<nav id="nav-principal">
+    <ul>
+        {% for post in site.posts %}
+            <li><a href="{{ post.url | relative_url }}">{{post.title}}</a></li>
+        {% endfor %}
+    </ul>
+</nav>
+
+
+<body>
+    
+    
+    <main>
+        <section class="posts">
+            <article class="article-1">
+                <header>
+                    <h1>Vidal Gonzalo</h1>
+                    
+                </header>
+
+                
+                <img src="{{'/assets/imagens/naruto.jpg | relative_url}}">
+                
+              
+
+
+                <footer>
+                    <p>Escrito por Jekyll</p>
+                </footer>
+            </article>
+            
+        </section>
+
+        
+        
+    </main>
+    <footer class="home_footer">
+        <p>Informações de copyright 2020 &copy</p>
+    </footer>
+</body>
+
+
+
+
+
+
+
